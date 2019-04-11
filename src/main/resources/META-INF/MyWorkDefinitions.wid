@@ -8,7 +8,6 @@
       "To" : new StringDataType(),
       "Priority" : new StringDataType(),
     ],
-    "displayName" : "Notification",
-    "icon" : ""
+    "displayName" : "Notification"
   ]
 ]
