@@ -9,6 +9,6 @@
       "Priority" : new StringDataType(),
     ],
     "displayName" : "Notification",
-    "icon" : ""
+    "icon" : "icons/notification.gif"
   ]
 ]
