@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component("Notification")
 public class NotificationWorkItemHandler implements WorkItemHandler {
+    @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
 
         // extract parameters
@@ -21,7 +22,7 @@ public class NotificationWorkItemHandler implements WorkItemHandler {
         workItemManager.completeWorkItem(workItem.getId(), null);
 
     }
-
+    @Override
     public void abortWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
 
     }
