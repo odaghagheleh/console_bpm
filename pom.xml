@@ -51,6 +51,11 @@
       <version>1.0.26</version>
       <scope>compile</scope>
     </dependency>
+      <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>4.0.9.RELEASE</version>
+      </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -59,6 +64,14 @@
         <artifactId>kie-maven-plugin</artifactId>
         <version>7.11.0.Final-redhat-00004</version>
         <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>6</source>
+          <target>6</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
